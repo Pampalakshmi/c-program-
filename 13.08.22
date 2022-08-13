@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+    int i,j,n,col;
+    printf("enter the no.of col");
+    scanf("%d",&n);
+    col=1;
+    for(i=1;i<n*2;i++)
+    {
+        for(j=1;j<=col;j++)
+         printf(" * ");
+            if(i<n)
+            col++;
+               else
+            col--;
+    
+        printf("\n");
+    }
+   
+}
