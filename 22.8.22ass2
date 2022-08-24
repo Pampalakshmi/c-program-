@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+
+
+void main()
+{
+int i,j,m,n,arr[10][10],nsum;
+clrscr();
+printf("enter the rows and columns number");
+scanf("%d %d",&m,&n);
+printf("enter the matrix elements");
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+scanf("%d",&arr[i][j]);
+}
+}
+for(i=0;i<m;i++)
+{
+nsum=0;
+for(j=0;j<n;j++)
+{
+nsum=nsum+arr[i][j];
+}
+printf("the sum is %d %d ",i,nsum);
+}
+}
